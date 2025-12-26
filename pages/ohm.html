@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Ohm Law Calculator</title>
+  <link rel="stylesheet" href="../style/ohm.css">
+</head>
+
+<body>
+  <main>
+    <h3>กฎของโอห์ม (V I R)</h3>
+    <p>ใส่ค่า 2 ช่อง เว้น 1 ช่อง ระบบจะคำนวณให้</p>
+
+    <label>
+  ⚡ แรงดัน (V)
+  <input type="number" id="voltage" placeholder="Volt">
+</label>
+
+<label>
+  🔋 กระแส (I)
+  <input type="number" id="current" placeholder="Ampere">
+</label>
+
+<label>
+  🟢 ความต้านทาน (R)
+  <input type="number" id="resistance" placeholder="Ohm">
+</label>
+    <!-- ===== Button ===== -->
+    <button onclick="calculateOhm()">คำนวณ</button>
+
+    <!-- ===== Result ===== -->
+    <div id="result" class=""></div>
+  </main>
+
+  <script src="../modules/ohm.js"></script>
+</body>
+</html>

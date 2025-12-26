@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Resistor Color Code</title>
+  <link rel="stylesheet" href="../style/resistor.css">
+</head>
+
+<body>
+ <main>
+  <h2>อ่านแถบสีตัวต้านทาน</h2>
+
+  <!-- ตัวต้านทาน (icon) -->
+<div class="resistor">
+  <div class="band" id="band1-color"></div>
+  <div class="band" id="band2-color"></div>
+  <div class="band" id="multiplier-color"></div>
+  <div class="band tolerance" id="tolerance-color"></div>
+</div>
+
+  <!-- เลือกสีแถบ -->
+  <select id="band1"></select>
+  <select id="band2"></select>
+  <select id="multiplier"></select>
+  <select id="tolerance"></select>
+
+  <button onclick="calculateResistor()">คำนวณ</button>
+
+  <p id="result">ผลลัพธ์จะแสดงตรงนี้</p>
+ </main>
+  <!-- ดึงโค้ดคำนวณ -->
+  <script src="../modules/resistor.js"></script>
+</body>
+</html>

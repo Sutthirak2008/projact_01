@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Power Calculator</title>
+  <link rel="stylesheet" href="../style/power.css">
+</head>
+
+<body>
+  <main>
+    <h1>⚡ กำลังไฟฟ้า (Power)</h1>
+    <p>ใส่ค่า 2 ช่อง ระบบจะคำนวณกำลังไฟให้</p>
+
+    <label>
+      🔌 แรงดัน (V)
+      <input type="text" id="voltage" placeholder="เช่น 12, 5k">
+    </label>
+
+    <label>
+      🔋 กระแส (I)
+      <input type="text" id="current" placeholder="เช่น 2, 10m">
+    </label>
+
+    <label>
+      🟢 ความต้านทาน (R)
+      <input type="text" id="resistance" placeholder="เช่น 220, 4.7k">
+    </label>
+
+    <button onclick="calculatePower()">คำนวณกำลังไฟ</button>
+
+    <div id="result"></div>
+
+  </main>
+
+  <script src="../modules/power.js"></script>
+</body>
+</html>
